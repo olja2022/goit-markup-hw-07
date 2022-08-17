@@ -1,0 +1,19 @@
+.page-header {
+  background-color: var(--primary-text-color-theme-dark);
+  border-bottom: 1px solid #ececec;
+}
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.page-header__logo {
+  margin-right: 93px;
+}
+.logo-black {
+  color: #000000;
+}

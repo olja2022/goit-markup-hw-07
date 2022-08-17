@@ -1,0 +1,56 @@
+.page-employees {
+  background-color: var(--modal-btn-color-portfolio);
+}
+.name-employee {
+  @include font(16px, 500, 19px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-theme-light);
+}
+.job-employee {
+  @include font(16px, 400, 19px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.employees-card {
+  flex-basis: calc((100% - 90px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-text-color-theme-dark);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.employees-card-content-wrapper {
+  padding: 30px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-list-link {
+  @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color-theme-dark);
+  transition: background-color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.social-list-icon {
+  fill: var(--icon-color);
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: #ffffff;
+  }
+}

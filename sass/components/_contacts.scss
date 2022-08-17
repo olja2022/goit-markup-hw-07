@@ -1,0 +1,32 @@
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts__phone,
+.contacts__mail {
+  @include font(14px, 500, 16px);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  transition: color var(--transition-dur-and-func);
+}
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__phone:hover,
+.contacts__phone:focus {
+  color: var(--accent-color);
+}
+.contacts__mail {
+  margin-right: 50px;
+}
+.contacts__item {
+  @extend %align;
+}
+.contacts__icon {
+  align-self: center;
+  fill: currentColor;
+  margin-right: 10px;
+  order: -1;
+}
